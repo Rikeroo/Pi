@@ -13,7 +13,7 @@
         {
           "name": "lab", // (foo.example.com)
           "proxied": true
-        },
+        }
       ]      
     }    
   ],
