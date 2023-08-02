@@ -1,0 +1,14 @@
+{
+  "cloudflare": [
+    {
+      "authentication": {
+        "api_token": "api_token_here",
+      },
+      "zone_id": "your_zone_id_here",
+    }
+  ],
+  "a": true,
+  "aaaa": true,
+  "purgeUnknownRecords": false,
+  "ttl": 300
+}
