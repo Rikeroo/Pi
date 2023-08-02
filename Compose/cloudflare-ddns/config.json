@@ -5,7 +5,17 @@
         "api_token": "api_token_here",
       },
       "zone_id": "your_zone_id_here",
-    }
+      "subdomains": [
+        {
+          "name": "", // Root domain (example.com)
+          "proxied": true
+        },
+        {
+          "name": "lab", // (foo.example.com)
+          "proxied": true
+        },
+      ]      
+    }    
   ],
   "a": true,
   "aaaa": true,
