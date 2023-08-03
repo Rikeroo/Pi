@@ -6,16 +6,17 @@ services:
     container_name: wireguard
     cap_add:
       - NET_ADMIN
-      - SYS_MODULE #optional
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
       - SERVERPORT=51820 #optional
-      - PEERDNS=auto #optional
+      - SERVERURL = lab.riklabs.com
+      - PEERS=rikPixel,edieLaptop,rikLaptop
+      - PEERDNS=192.168.1.1
       - LOG_CONFS=true #optional
     volumes:
-      - /home/rikw/appdata/wireguard:/config
+      - /home/rikw/docker/appdata/wireguard:/config
     ports:
       - 51820:51820/udp
     sysctls:
