@@ -1,6 +1,3 @@
-# Simple docker-compose.yml
-# You can change your port or volume location
-
 version: '3.3'
 
 services:
@@ -8,7 +5,7 @@ services:
     image: louislam/uptime-kuma:1
     container_name: uptime-kuma
     volumes:
-      - ./uptime-kuma-data:/app/data
+      - /home/rikw/docker/appdata/uptime-kuma:/app/data
     ports:
       - 3001:3001  # <Host Port>:<Container Port>
     restart: always
